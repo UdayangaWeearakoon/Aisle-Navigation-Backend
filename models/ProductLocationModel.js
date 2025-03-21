@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 const productLocationSchema = new mongoose.Schema({
     product_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Product', required: true },
     aisle_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Aisle', required: true },

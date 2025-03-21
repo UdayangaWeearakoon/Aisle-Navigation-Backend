@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 const supplierSchema = new mongoose.Schema({
     supplier_name: { type: String, required: true },
     email: { type: String, required: true, unique: true },

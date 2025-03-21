@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 const stockSchema = new mongoose.Schema({
     product_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Product', required: true },
     shelf_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Shelf', required: true },

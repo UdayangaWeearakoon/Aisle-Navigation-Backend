@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 const aisleSchema = new mongoose.Schema({
     aisle_num: { type: Number, required: true, unique: true },
     aisle_name: { type: String, required: true },

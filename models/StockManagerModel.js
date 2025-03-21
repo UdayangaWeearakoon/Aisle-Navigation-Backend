@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 const stockManagerSchema = new mongoose.Schema({
     user_id: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
     hire_date: { type: Date, required: true },

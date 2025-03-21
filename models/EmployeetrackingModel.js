@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 const employeeTrackingSchema = new mongoose.Schema({
     employee_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Employee', required: true },
     location: { type: String, required: true },
