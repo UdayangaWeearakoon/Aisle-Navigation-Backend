@@ -6,13 +6,13 @@ const dotenv = require('dotenv');
 const app = express();
 require('dotenv').config();
 
-//Import routes
-const userRoutes = require('./routes/UserRoute');
-
 const PORT = process.env.PORT || 8070;
 
 app.use(cors());
 app.use(bodyParser.json());
+
+//Import routes
+const userRoutes = require('./routes/UserRoute');
 
 //Use routes
 app.use('/users', userRoutes);
