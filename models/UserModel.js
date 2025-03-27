@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
   created_at: { type: Date, default: Date.now },
   last_login: { type: Date },
   is_active: { type: Boolean, default: true },
-  hire_date: { type: Date, required: true },
+  hire_date: { type: Date },
   job_title: { type: String, required: true },
   salary: { type: Number, required: true },
   overtime: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Overtime' }],
